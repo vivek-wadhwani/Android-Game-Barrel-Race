@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ <com.example.barrelrace.BarrelRaceView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/barrelRaceView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentTop="true"
+     android:background="@android:color/white" />
+
+ <Button
+     android:id="@+id/startButton"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:text="@string/start_game" />
+
+ <TextView
+     android:id="@+id/timerValue"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/startButton"
+     android:layout_alignBottom="@+id/startButton"
+     android:layout_alignParentRight="true"/>
+ 
+
+
+ <TextView
+     android:id="@+id/fenceHitCount"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/timerValue"
+     android:layout_alignBottom="@+id/timerValue"
+     android:layout_marginRight="30dp"
+     android:layout_toLeftOf="@+id/timerValue" />
+ 
+ <TextView
+     android:id="@+id/highScore"
+     android:layout_width="120dip"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/fenceHitCount"/>
+ 
+ </RelativeLayout>
